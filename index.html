@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>My BookList</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"> <i class="fas fa-book-open text-primary"></i> My <span>Book</span><span>List</span></span></h1>
+        <form name="myForm" id="book-form">
+           <div class="form-group">
+               <label for="title">Title</label>
+               <input id="title" class="form-control" type="text" name="title">
+           </div>
+           <div class="form-group">
+               <label for="author">Author</label>
+               <input id="author" class="form-control" type="text" name="author">
+           </div>
+           <div class="form-group">
+               <label for="isbn">ISBN#</label>
+               <input id="isbn" class="form-control" type="text" name="isbn">
+           </div>
+           <input type="submit" value="Add book" class = "btn btn-primary btn-block">
+           <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Auhotr</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+
+                </tbody>
+           </table>
+        </form>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
